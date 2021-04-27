@@ -4,9 +4,52 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./app/scss/style.css">
   <title>Christopher Leung: Front-End Developer & Project Manager</title>
 </head>
 <body>
-  
+  <div class="wrapper">
+    <!-- header starts -->
+    <header class="header">
+      <div class="overlay has-fade"></div>
+      <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+        <a href="/" class="header__logo">
+          <span>[LOGO]</span>
+        </a>
+
+        <!-- hmaburger btn -->
+        <div id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="header__menu has-fade">
+          <a href="#">work</a>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+        </div>
+
+        <!-- desktop links -->
+        <!-- <div class="header__links">
+          <a href="#">work</a>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+          <a href="#">twitter</a>
+          <a href="#">linkedin</a>
+          <a href="#">github</a>
+        </div> -->
+
+      </nav>
+    </header>
+    <!-- header ends -->
+
+  </div>
 </body>
+<script src="./app/js/script.js"></script>
 </html>
