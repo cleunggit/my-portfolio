@@ -1,5 +1,5 @@
 .footer {
-  background-color: $darkBlue;
+  background-color: $grayishBlue;
   color: $white;
   padding: 2.5rem;
   text-align: center;
@@ -54,7 +54,7 @@
       }
 
       &:hover svg path {
-        fill: $limeGreen;
+        fill: $red;
       }
     }
 
@@ -98,7 +98,7 @@
       transition: color 150ms ease-in-out;
       
       &:hover {
-        color: $limeGreen;
+        color: $red;
       }
     }
   }
@@ -122,7 +122,7 @@
 
   &__copyright {
     font-size: 0.8125rem;
-    color: $grayishBlue;
+    // color: $grayishBlue;
 
     @include breakpoint-up(large){
       grid-area: copyright;
