@@ -89,7 +89,7 @@ body {
   font-family: 'Quicksand', sans serif;
   font-weight: 400;
   line-height: 1.3;
-  background-color: #f8f8f8;
+  background-color: #f9f7f6;
   color: #9698a6;
 }
 
@@ -131,6 +131,11 @@ p {
 a, a:visited, a:hover {
   text-decoration: none;
   color: #2d314d;
+}
+
+button, input, textarea {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
 }
 
 .container {
@@ -265,7 +270,7 @@ a, a:visited, a:hover {
 
 .header nav {
   position: relative;
-  background-color: #f8f8f8;
+  background-color: #f9f7f6;
   padding-top: 1.0625rem;
   padding-bottom: 1.0625rem;
 }
@@ -329,7 +334,7 @@ a, a:visited, a:hover {
   left: 0;
   right: 0;
   bottom: -30px;
-  background: #ce064b;
+  background: #ffb700;
   opacity: 0;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
@@ -522,7 +527,7 @@ a, a:visited, a:hover {
 }
 
 .contact__field:focus {
-  border-bottom-color: #666;
+  border-bottom-color: #ffb700;
 }
 
 .contact__button {
@@ -543,12 +548,12 @@ a, a:visited, a:hover {
 }
 
 .contact .btn:hover {
-  color: #ce064b;
+  color: #ffb700;
 }
 
 .footer {
-  background-color: #9698a6;
-  color: white;
+  background-color: #efe9e7;
+  color: #9698a6;
   padding: 2.5rem;
   text-align: center;
 }
@@ -568,7 +573,7 @@ a, a:visited, a:hover {
 }
 
 .footer a {
-  color: white;
+  color: #9698a6;
 }
 
 .footer__logo {
@@ -613,7 +618,7 @@ a, a:visited, a:hover {
 }
 
 .footer__social a:hover svg path {
-  fill: #ce064b;
+  fill: #ffb700;
 }
 
 .footer__social a:not(:last-child) {
@@ -670,7 +675,7 @@ a, a:visited, a:hover {
 }
 
 .footer__links a:hover {
-  color: #ce064b;
+  color: #ffb700;
 }
 
 @media (min-width: 64em) {

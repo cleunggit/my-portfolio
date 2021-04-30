@@ -1,4 +1,5 @@
 const btnHamburger = document.querySelector('#btnHamburger');
+const menuItems = document.querySelectorAll('.header__menu');
 const body = document.querySelector('body');
 const header = document.querySelector('.header');
 const overlay = document.querySelector('.overlay');
@@ -26,3 +27,21 @@ btnHamburger.addEventListener('click', function(){
 
   }  
 });
+
+const addListener = () => {
+  menuItems.forEach( item => {
+    item.addEventListener('click', () => {
+      console.log('clicked');
+      if (header.classList.contains('open')) {
+        body.classList.remove('noscroll');
+        header.classList.remove('open');
+        fadeElems.forEach( element => {
+          element.classList.remove('fade-in');
+          element.classList.add('fade-out');
+        })
+      }
+    })
+  })
+}
+
+addListener();

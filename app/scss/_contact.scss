@@ -30,7 +30,7 @@
   }
 
   &__field:focus {
-    border-bottom-color: #666;
+    border-bottom-color: $darkOrange;
   }
 
   &__button {
@@ -50,6 +50,6 @@
   }
 
   .btn:hover {
-    color: $red;
+    color: $darkOrange;
   }  
 }
