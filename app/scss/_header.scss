@@ -27,7 +27,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-image: linear-gradient($grayishBlue, transparent);
+    background-image: linear-gradient($taupe, transparent);
   }
 
   nav {
@@ -40,8 +40,8 @@
   &__logo {
 
     img {
-      width: 8.8125rem;
-      height: 1.375rem;
+      width: 3rem;
+      height: 3rem;
     }
 
   }
@@ -84,7 +84,7 @@
 
     a {
       position: relative;
-      font-size: $font-sm;
+      font-size: $font-med;
       color: $grayishBlue;
       transition: color 300ms ease-in-out;
 

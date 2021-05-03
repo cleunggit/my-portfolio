@@ -1,5 +1,5 @@
 .footer {
-  background-color: $darkTaupe;
+  background-color: $taupe;
   color: $grayishBlue;  
   padding: 2.5rem;
   text-align: center;
@@ -25,6 +25,10 @@
   &__logo {
     display: inline-block;
 
+    img {
+      width: 3rem;
+    }
+
     @include breakpoint-down(medium){
       margin-bottom: 1.875rem;
     }
@@ -45,23 +49,15 @@
       align-self: end;
     }
 
-    a {      
+    i {
       display: inline-block;
-      height: 1.25rem;
+      width: 2rem;
+      transition: color 150ms ease-in-out;
 
-      svg path {
-        transition: fill 150ms ease-in-out;
-      }
-
-      &:hover svg path {
-        fill: $darkOrange;
+      &:hover {
+        color: $darkOrange;
       }
     }
-
-    a:not(:last-child) {
-      margin-right: 1rem;
-    }
-
   }
 
   &__links {

@@ -118,7 +118,7 @@ h2 {
 
 @media (min-width: 64em) {
   h2 {
-    font-size: 2.25rem;
+    font-size: 2rem;
     margin-bottom: 2.25rem;
   }
 }
@@ -128,9 +128,15 @@ p {
   margin-bottom: 2.25rem;
 }
 
-a, a:visited, a:hover {
+a, a:visited {
   text-decoration: none;
   color: #2d314d;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+
+a:hover {
+  color: #ffb700;
 }
 
 button, input, textarea {
@@ -264,8 +270,8 @@ button, input, textarea {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9698a6), to(transparent));
-  background-image: linear-gradient(#9698a6, transparent);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f7f6), to(transparent));
+  background-image: linear-gradient(#f9f7f6, transparent);
 }
 
 .header nav {
@@ -276,8 +282,8 @@ button, input, textarea {
 }
 
 .header__logo img {
-  width: 8.8125rem;
-  height: 1.375rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .header__toggle > span {
@@ -316,7 +322,7 @@ button, input, textarea {
 
 .header__links a {
   position: relative;
-  font-size: 0.875rem;
+  font-size: 1.125rem;
   color: #9698a6;
   -webkit-transition: color 300ms ease-in-out;
   transition: color 300ms ease-in-out;
@@ -408,10 +414,6 @@ button, input, textarea {
   .hero img {
     width: 65%;
   }
-}
-
-.work {
-  background-color: #fafafa;
 }
 
 .work__grid {
@@ -516,7 +518,7 @@ button, input, textarea {
 
 .contact__field {
   width: 100%;
-  padding: 0.625rem 0;
+  padding: 1rem 0;
   font-size: 1rem;
   background: none;
   border: none;
@@ -552,7 +554,7 @@ button, input, textarea {
 }
 
 .footer {
-  background-color: #efe9e7;
+  background-color: #f9f7f6;
   color: #9698a6;
   padding: 2.5rem;
   text-align: center;
@@ -578,6 +580,10 @@ button, input, textarea {
 
 .footer__logo {
   display: inline-block;
+}
+
+.footer__logo img {
+  width: 3rem;
 }
 
 @media (max-width: 63.9375em) {
@@ -607,22 +613,15 @@ button, input, textarea {
   }
 }
 
-.footer__social a {
+.footer__social i {
   display: inline-block;
-  height: 1.25rem;
+  width: 2rem;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
 }
 
-.footer__social a svg path {
-  -webkit-transition: fill 150ms ease-in-out;
-  transition: fill 150ms ease-in-out;
-}
-
-.footer__social a:hover svg path {
-  fill: #ffb700;
-}
-
-.footer__social a:not(:last-child) {
-  margin-right: 1rem;
+.footer__social i:hover {
+  color: #ffb700;
 }
 
 .footer__links {
