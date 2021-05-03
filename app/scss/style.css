@@ -108,6 +108,7 @@ h1 {
 @media (min-width: 64em) {
   h1 {
     font-size: 3.25rem;
+    margin-bottom: 3rem;
   }
 }
 
