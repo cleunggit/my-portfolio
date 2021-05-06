@@ -4,6 +4,14 @@ const body = document.querySelector('body');
 const header = document.querySelector('.header');
 const overlay = document.querySelector('.overlay');
 const fadeElems = document.querySelectorAll('.has-fade');
+const btn = document.getElementById('#btn');
+const userName = document.getElementById('user_name');
+const userEmail = document.getElementById('user_email');
+const message = document.getElementById('message');
+const form = document.getElementById('contact-form');
+
+const serviceID = 'service_ojvlt4k';
+const userID = 'user_6gHHjnyE2k6oWAkylWcfm';
 
 const closeHamburgerMenu = () => {
   if(header.classList.contains('open')){ // Close Hamburger Menu
@@ -40,6 +48,26 @@ const addListener = () => {
       closeHamburgerMenu();
     })
   })
+}
+
+// Contact form
+
+window.onload = function() {
+  form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      // generate a five digit number for the contact_number variable
+      // this.contact_number.value = Math.random() * 100000 | 0;
+      // these IDs from the previous steps
+      emailjs.sendForm(serviceID, 'contact_form', this)
+          .then(function() {
+              console.log('SUCCESS!');
+              alert('Sent!')
+              form.reset();
+          }, function(error) {
+              console.log('FAILED...', error);
+              // alert(JSON.stringify(error))
+          });
+  });
 }
 
 addListener();
