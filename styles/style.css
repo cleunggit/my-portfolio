@@ -620,6 +620,7 @@ button, input, textarea {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.875rem;
+  padding: 0;
 }
 @media (min-width: 40em) {
   .work__grid {
@@ -628,7 +629,7 @@ button, input, textarea {
 }
 @media (min-width: 64em) {
   .work__grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .work__item {
@@ -646,17 +647,15 @@ button, input, textarea {
 }
 .work__image {
   height: 12.5rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  width: 100%;
 }
 .work__text {
-  padding: 1.875rem 1.875rem 2.5rem 1.875rem;
+  padding: 0.975rem 1.875rem 2.5rem 1.875rem;
   color: #9698a6;
 }
 @media (min-width: 40em) {
   .work__text {
-    padding: 1.875rem 1.5625rem;
+    padding: 0.975rem 1.5625rem;
   }
 }
 .work__author {
@@ -671,6 +670,27 @@ button, input, textarea {
 }
 .work__description {
   font-size: 0.8125rem;
+  margin-bottom: 1.75rem;
+}
+.work__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.work__links span {
+  margin: 0 0.75rem;
+}
+.work__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0.75rem;
 }
 
 .contact__form {
