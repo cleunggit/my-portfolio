@@ -34,7 +34,7 @@
   }
 
   &__text {
-    padding: 0.975rem 1.875rem 2.5rem 1.875rem;
+    padding: 0.975rem 1.875rem 0.975rem 1.875rem;
     color: $grayishBlue;
 
     @include breakpoint-up(medium){
@@ -55,8 +55,12 @@
   }
 
   &__description {
-    font-size: 0.8125rem;
+    font-size: 1rem;
     margin-bottom: 1.75rem;
+  }
+
+  &__icons {
+    font-size: 1.2rem;
   }
 
   &__links {
@@ -64,13 +68,14 @@
     justify-content: flex-end;
     
     span {
-      margin: 0 0.75rem;
+      margin: 0 0.5rem;
     }
   }
   
   &__footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 0.75rem;
   }
 }

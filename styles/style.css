@@ -650,7 +650,7 @@ button, input, textarea {
   width: 100%;
 }
 .work__text {
-  padding: 0.975rem 1.875rem 2.5rem 1.875rem;
+  padding: 0.975rem 1.875rem 0.975rem 1.875rem;
   color: #9698a6;
 }
 @media (min-width: 40em) {
@@ -669,8 +669,11 @@ button, input, textarea {
   margin-bottom: 0.5rem;
 }
 .work__description {
-  font-size: 0.8125rem;
+  font-size: 1rem;
   margin-bottom: 1.75rem;
+}
+.work__icons {
+  font-size: 1.2rem;
 }
 .work__links {
   display: -webkit-box;
@@ -681,7 +684,7 @@ button, input, textarea {
           justify-content: flex-end;
 }
 .work__links span {
-  margin: 0 0.75rem;
+  margin: 0 0.5rem;
 }
 .work__footer {
   display: -webkit-box;
@@ -690,6 +693,9 @@ button, input, textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 0.75rem;
 }
 
