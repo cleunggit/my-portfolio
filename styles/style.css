@@ -519,7 +519,7 @@ button, input, textarea {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background: white;
-  margin-top: 17.5rem;
+  margin-top: 30rem;
   padding: 1.625rem;
   border-radius: 5px;
 }
@@ -528,6 +528,10 @@ button, input, textarea {
   padding: 0.625rem;
   color: #2d314d;
   text-align: center;
+  font-size: 1.25rem;
+}
+.header__menu a:not(:last-child) {
+  margin-bottom: 1rem;
 }
 .header__links a {
   position: relative;
