@@ -646,7 +646,6 @@ button, input, textarea {
           transform: scale(1.05);
 }
 .work__image {
-  height: 12.5rem;
   width: 100%;
 }
 .work__text {
@@ -697,6 +696,55 @@ button, input, textarea {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 0.75rem;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip:before,
+.tooltip:after {
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.tooltip:after {
+  border-right: 6px solid transparent;
+  border-top: 6px solid rgba(0, 0, 0, 0.75);
+  border-left: 6px solid transparent;
+  content: "";
+  height: 0;
+  bottom: 20px;
+  left: 0;
+  width: 0;
+}
+
+.tooltip:before {
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 2px;
+  color: #fff;
+  content: attr(data-title);
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  bottom: 26px;
+  white-space: nowrap;
+}
+
+.tooltip.fade:after,
+.tooltip.fade:before {
+  -webkit-transform: translate3d(0, -10px, 0);
+          transform: translate3d(0, -10px, 0);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.tooltip.fade:hover:after,
+.tooltip.fade:hover:before {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .contact__form {
