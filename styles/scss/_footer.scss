@@ -68,7 +68,8 @@
 
     @include breakpoint-up(large){
       justify-content: space-between;
-      align-items: start;      
+      align-items: start;
+      text-align: left;      
     }
 
     &.col1 {

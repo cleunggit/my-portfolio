@@ -888,6 +888,7 @@ button, input, textarea {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+    text-align: left;
   }
 }
 @media (min-width: 64em) {
