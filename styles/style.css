@@ -595,6 +595,7 @@ button, input, textarea {
 }
 .hero__text {
   text-align: center;
+  font-size: 1.2rem;
 }
 @media (min-width: 64em) {
   .hero__text {
@@ -755,6 +756,7 @@ button, input, textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 1.2rem;
 }
 @media (min-width: 40em) {
   .contact__form {
@@ -776,7 +778,7 @@ button, input, textarea {
 .contact__field {
   width: 100%;
   padding: 1rem 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
   background: none;
   border: none;
   border-bottom: 1px solid #ddd;

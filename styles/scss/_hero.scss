@@ -27,6 +27,7 @@
 
   &__text {
     text-align: center;
+    font-size: 1.2rem;
 
     @include breakpoint-up(large){
       flex: 2;

@@ -2,6 +2,7 @@
   &__form {
     display: flex;
     flex-direction: column;
+    font-size: 1.2rem;
 
     @include breakpoint-up(medium) {
       flex-direction: row;
@@ -21,7 +22,7 @@
   &__field {
     width: 100%;
     padding: 1rem 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
     background: none;
     border: none;
     border-bottom: 1px solid #ddd;
