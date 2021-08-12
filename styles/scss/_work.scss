@@ -21,8 +21,10 @@
     box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
     transition: all 150ms ease-in-out;
 
-    &:hover {
-      transform: scale(1.05);
+    @include breakpoint-up(medium) {
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
 

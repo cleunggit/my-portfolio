@@ -65,10 +65,11 @@
   &__menu {
     position: absolute;
     width: calc(100% - 3rem);
+    top: 70px;
     left: 50%;
     transform: translateX(-50%);
     background: $white;
-    margin-top: 20rem;
+    // margin-top: 20rem;
     padding: 1.625rem;
     border-radius: 5px;
 

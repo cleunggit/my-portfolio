@@ -464,6 +464,13 @@ button, input, textarea {
   }
 }
 
+.button {
+  border-radius: 0.3125rem;
+  background: #ffb700;
+  color: white;
+  padding: 5px 10px;
+}
+
 .header {
   position: relative;
   z-index: 1;
@@ -515,11 +522,11 @@ button, input, textarea {
 .header__menu {
   position: absolute;
   width: calc(100% - 3rem);
+  top: 70px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background: white;
-  margin-top: 20rem;
   padding: 1.625rem;
   border-radius: 5px;
 }
@@ -649,9 +656,11 @@ button, input, textarea {
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
 }
-.work__item:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+@media (min-width: 40em) {
+  .work__item:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
 }
 .work__image {
   width: 100%;
